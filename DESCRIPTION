@@ -1,0 +1,24 @@
+Package: sitzung2
+Title: Shiny app for session 2 in the EU crises seminar
+Version: 0.0.0.9000
+Authors@R: 
+    person("Jonas", "Lieth", , "jonas.lieth@wiso.uni-koeln.de", role = c("cre", "aut", "cph"))
+Description: Explore the effect of unemployment on EU trust in times of crisis.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    stats,
+    bslib,
+    colorspace,
+    countrycode,
+    dplyr,
+    ggplot2,
+    scales,
+    sf,
+    shiny,
+    shinyWidgets,
+    waiter
+Depends: 
+    R (>= 3.5)
