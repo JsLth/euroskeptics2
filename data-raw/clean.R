@@ -18,7 +18,7 @@ library(sf)
 options(gesis_download_purpose = "lecturer")
 
 # Harmonized Eurobarometer
-eb <- read_dta(gesis_data("SDN-10.7802-2539", select = "\\.zip", path = "data_raw")) |>
+eb <- read_dta(gesis_data("SDN-10.7802-2539", select = "\\.zip", path = "data-raw")) |>
   select(
     year, country,
     mem, benefit, treu,
@@ -31,7 +31,7 @@ eb <- read_dta(gesis_data("SDN-10.7802-2539", select = "\\.zip", path = "data_ra
   as_factor()
 
 
-eb96 <- read_dta(gesis_data("ZA7848", select = "\\.dta", path = "data_raw")) |>
+eb96 <- read_dta(gesis_data("ZA7848", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
@@ -43,7 +43,7 @@ eb96 <- read_dta(gesis_data("ZA7848", select = "\\.dta", path = "data_raw")) |>
     occup = d15a
   ) |>
   mutate(year = year(as.POSIXct(as.character(as_factor(year)), format = "%d-%b-%Y")))
-eb97 <- read_dta(gesis_data("ZA7902", select = "\\.dta", path = "data_raw")) |>
+eb97 <- read_dta(gesis_data("ZA7902", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
@@ -55,7 +55,7 @@ eb97 <- read_dta(gesis_data("ZA7902", select = "\\.dta", path = "data_raw")) |>
     occup = d15a
   ) |>
   mutate(year = year(as.POSIXct(as.character(as_factor(year)), format = "%d-%b-%Y")))
-eb98 <- read_dta(gesis_data("ZA7953", select = "\\.dta", path = "data_raw")) |>
+eb98 <- read_dta(gesis_data("ZA7953", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
@@ -67,7 +67,7 @@ eb98 <- read_dta(gesis_data("ZA7953", select = "\\.dta", path = "data_raw")) |>
     occup = d15a
   ) |>
   mutate(year = year(as.POSIXct(as.character(as_factor(year)), format = "%d-%b-%Y")))
-eb99 <- read_dta(gesis_data("ZA7997", select = "\\.dta", path = "data_raw")) |>
+eb99 <- read_dta(gesis_data("ZA7997", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
@@ -79,7 +79,7 @@ eb99 <- read_dta(gesis_data("ZA7997", select = "\\.dta", path = "data_raw")) |>
     occup = d15a
   ) |>
   mutate(year = year(as.POSIXct(as.character(as_factor(year)), format = "%d-%b-%Y")))
-eb100 <- read_dta(gesis_data("ZA8843", select = "\\.dta", path = "data_raw")) |>
+eb100 <- read_dta(gesis_data("ZA8843", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
@@ -91,7 +91,7 @@ eb100 <- read_dta(gesis_data("ZA8843", select = "\\.dta", path = "data_raw")) |>
     occup = d15a
   ) |>
   mutate(year = year(as.POSIXct(as.character(as_factor(year)), format = "%d-%b-%Y")))
-eb101 <- read_dta(gesis_data("ZA8843", select = "\\.dta", path = "data_raw")) |>
+eb101 <- read_dta(gesis_data("ZA8843", select = "\\.dta", path = "data-raw")) |>
   select(
     year = p1,
     country = isocntry,
