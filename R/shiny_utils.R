@@ -1,3 +1,6 @@
+"%||%" <- function(x, y) if (is.null(x)) y else x
+
+
 filter_data <- function(input, ranef_cxt, ranef_ind, group_filter = TRUE, context_filter = TRUE) {
   y <- input$x
   context <- input$context
