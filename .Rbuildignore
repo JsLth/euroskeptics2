@@ -3,3 +3,6 @@
 ^other_stuff$
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^shinylive$
+^app.R$
+^.github$
